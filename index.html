@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Akshar' rel='stylesheet'>
+    <link rel="stylesheet" href="./home.css">
+    <title>Silkolite</title>
+</head>
+<body>
+    <script src="./script.js"></script>
+    <header class="header">
+        <div class="header-text">
+            <a id="text" href="#">Welcome to Industry & Factory Business Theme.</a>
+            <a id="free-quote" href="#">GET A FREE QUOTE</a>
+        </div>
+        <div class="header-icons">
+            <a id="location" href="#">Jos Mnheles Hutyio 1430 Marasil</a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="box active" style="background-image: url(./nav2.jpg);"></div>
+        <div class="box" style="background-image: url(./nav1.jpg);">
+            <div class="our-values">
+                <h1>Our Values</h1>
+                <div>✅ Customer Satisfaction</div>
+                <div>✅ Integrity</div>
+                <div>✅ Innovative thinking</div>
+                <div>✅ Social Welfare</div>
+            </div>
+        </div>
+        <div class="box" style="background-image: url(./nav.jpg);"></div>
+        <nav class="navbar">
+            <img class="logo" src="./logo.jpg"/>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul class="nav-links">
+                <li><a class="active" href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./product.html">Products</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li>
+                    <a href="./network.html">Network</a>
+                    <div class="dropdown-menu">
+                        <ul class="nav-links">
+                            <li><a href="./demesticmarket.html">Demestic Market</a></li>
+                            <li><a href="./globalmarket.html">Global Market</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li>
+                    <a href="./dashboard.html">Account</a>
+                    <div class="dropdown-menu">
+                        <ul class="nav-links">
+                            <li><a href="./dashboard.html">Dashboard</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav-contact">
+                <div class="nav-num">
+                    <p>Call us Now|</p>
+                    <a id="num-mail" href="#">+18 - 2222 - 3555</a>
+                </div>
+                <div class="nav-mail">
+                    <p>Talk to us</p>
+                    <a id="num-mail" href="#">example@gmail.com</a>
+                </div>
+            </div> 
+        </nav>
+    </div>
+    <script>
+        let boxes = document.querySelectorAll('.box');
+        let index = 0;
+
+        function showNextBox() {
+            boxes[index].classList.remove('active'); // Current box hide karein
+            index = (index + 1) % boxes.length; // Next index calculate karein
+            boxes[index].classList.add('active'); // Next box show karein
+        }
+
+        setInterval(showNextBox, 4000); // Har 4 second baad change hoga
+    </script>
+    <div class="welcome">
+        Welcome to Pioneer Embroideries Limited
+    </div>
+    <div class="container-two">
+        <div class="sub-container-two">
+            <h2 id="welcome-text">Leading Dope Dyed / Melt Dyed Polyester Yarn Manufacturer</h2>
+            <p>Pioneer Embroideries Limited commenced its operation in the year 1991, as manufacturer of Embroideries, Torchon/Bobbin laces, Raschel laces and other garment accessories. Later on in 2005, decided to foray into a greenfield project of manufacturing Dope Dyed Polyester Filament Yarns and Cabled/Twisted/Air Textured Yarns/Draw Textured Yarns with state of art world renowned German technology. Within no time, we have carved a permanent niche in Dope dyed yarns all across the world with cutting edge technology and world class quality under brand</p>
+            <button onclick="SeeMore()" class="see-more">See More..</button>
+        </div>
+        <div class="image-logo">
+            <a href="#"><img class="hakoba" src="./hakoba.png"/></a>
+            <img class="silkolite" src="./silkolite.png">
+        </div>
+    </div>
+    <div class="container-three">
+            <h1 id="our-product">Our Products</h1>
+        <div class="sub-container-three">
+            <div class="text-container-three">
+                <div class="text-three">
+                    <div class="poy-box">
+                        <img class="poy-img" src="./fully draw.png"/>
+                        <a id="poy-links" href="#">Fully Drawn Yarn (FDY)</a>
+                    </div>
+                    <p id="poy-text">Fully Drawn Yarn (FDY) is produced from the melting and extrusion (melt spinning) of the polyester chip or flake.</p>
+                </div>
+                <div class="text-three">
+                    <div class="poy-box">
+                        <img class="poy-img" src="./air texture.png"/>
+                        <a id="poy-links" href="#">Air Textured Yarn (ATY)</a>
+                    </div>
+                    <p id="poy-text">Air Textured Yarn (ATY), is a kind of hybrid textured yarn produced through Air-Jet Texturing process</p>
+                </div>
+                <div class="text-three">
+                    <div class="poy-box">
+                        <img class="poy-img" src="./poy.png"/>
+                        <a id="poy-links" href="#">Partially Oriented Yarn (POY)</a>
+                    </div>
+                    <p id="poy-text">Partially Oriented Yarn (POY) is produced from the melting and extrusion (melt spinning) of the polyester chip or flake.</p>
+                </div>
+                <div class="text-three">
+                    <div class="poy-box">
+                        <img class="poy-img" src="./twisted.png"/>
+                        <a id="poy-links" href="#">Polyester Twisted Yarn</a>
+                    </div>
+                    <p id="poy-text">Twist is the spiral arrangement of the fibres around the axis of the yarn.</p>
+                </div>
+                <div class="text-three">
+                    <div class="poy-box">
+                        <img class="poy-img" src="./dty.png"/>
+                        <a id="poy-links" href="#">Draw Textursed Yarn (DTY)</a>
+                    </div>
+                    <p id="poy-text">Drawn Textured Yarn (DTY) is a type of polyester filament yarn produced by processing POY through a texturing process</p>
+                </div>
+                <div class="text-three">
+                    <div class="poy-box">
+                        <img class="poy-img" src="./cable.png"/>
+                        <a id="poy-links" href="#">Cabled/High Bulk Yarns</a>
+                    </div>
+                    <p id="poy-text">Cabling and High Bulking are processes to convert multi filament yarns suitable for applications where coarser deniers are required.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <h1 id="special-product">Special Products</h1>
+    <div class="container-four">
+    <div class="sub-container-four">
+        <div class="text-container-four">
+            <div class="text-four">
+                <div class="special-box">
+                    <img class="special-img" src="./functional yarn.png"/>
+                    <a id="special-links" href="#">Functional Yarn</a>
+                </div>
+                <p id="special-text">Functional Yarn with special characteristics viz Flame Retardant, Anti Microbial, High Light Fastness and High Moisture Absorption are available</p>
+            </div>
+            <div class="text-four">
+                <div class="special-box">
+                    <img class="special-img" src="./fancy yarn.png"/>
+                    <a id="special-links" href="#">Fancy Yarn</a>
+                </div>
+                <p id="special-text">Yarns suitable for replacing natural fibres like Cotton, Viscose and Wool for applications in Flat Knitting, Circular Knitting and Weaving</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container-five">
+        <div class="sub-container-five">
+                <img class="shade-database" src="./shad-database.png"/>
+                <div class="wrapper">
+                    <div class="fade-box visible">
+                        <h2 id="mission">Mission</h2>
+                        <P>Pioneer is dedicated to delivering products and services with intigrity and accountability using both proven and innovative methods. </P>
+                    </div>
+                <div class="fade-box">
+                    <h2 id="mission">Vision</h2>
+                    <p>To attain market leadershi0p through unmatched quality, a diverse and unique product mix, empowered employees, world-class systems, and the highest ethical and professinal standards.</p>
+                </div>
+                <div class="fade-box">
+                    <h2 id="mission">Values</h2>
+                    <p>Customer Satifaction, Integrity, Innovative thinkig Social Welfare</p>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const boxes = document.querySelectorAll(".fade-box");
+            let currentIndex = 0;
+
+            setInterval(() => {
+                // Current div hide karo
+                boxes[currentIndex].classList.remove("visible");
+
+                // Next index calculate karo (loop ke liye)
+                currentIndex = (currentIndex + 1) % boxes.length;
+
+                // Next div show karo
+                boxes[currentIndex].classList.add("visible");
+
+            }, 5000); // 5 second ke baad next div show hoga
+        });
+    </script>
+    <div class="container-six">
+        <div class="sub-container-six">
+            <h1 id="ask-question">ASK FOR A PRODUCT BROCHURE</h1>
+            <input class="email" type="email" name="email" placeholder="Your Email"/>
+            <button class="send-button">Send</button>
+            <div class="address-container">
+                <div class="work">
+                    <h2 id="wok">Work</h2>
+                    <p id="address">Pioneer Embroideries Limited, Vill Kheri, Trilokpur Road, Kala Amb, Sirmour, H.P. - 173030, India <br> Tel: 91-9816802052-53,<br> Email : info@silkolite.com</p>
+                </div>
+                <div class="marketing">
+                    <h2 id="work">Marketing Office</h2>
+                    <p id="address">Pioneer Embroideries Limited, 1007, D-Mall, Netaji Subash Place, Pitampura, New Delhi-110034, INDIA,<br> Tel: 91-11-45548133/4/5,<br>Email: sales.delhi@silkolite.com, exports@silkolite.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-13">
+        <div class="first-heading">
+            <h2>WANT TO GET MOTIVATED? <br/> STAY CONNECTED!</h2>
+            <div class="ul-links">
+                <input type="email" id="email-id" name="email" placeholder="Your Email Address..." required>
+                <button class="subscribe-naw">SUBSCRIBE - NOW + </button>
+                <div class="contact-information">
+                    <div class="contact-details">    
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>CONTACT US</a></li>
+                        <li><a href="#"> sales@exampleinfo.com</a></li>
+                        <li><a id="number" href="#">+ 123 456 7890</a></li>
+                    </div>
+                    <div class="address">    
+                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-301q99-80 149.5-154T680-594q0-90-56-148t-144-58q-88 0-144 58t-56 148q0 65 50.5 139T480-301Zm0 101Q339-304 269.5-402T200-594q0-125 78-205.5T480-880q124 0 202 80.5T760-594q0 94-69.5 192T480-200Zm0-320q33 0 56.5-23.5T560-600q0-33-23.5-56.5T480-680q-33 0-56.5 23.5T400-600q0 33 23.5 56.5T480-520ZM200-80v-80h560v80H200Zm280-520Z"/></svg>ADDRESS</a></li>
+                        <li><a href="#"> 4789 Melmorn Street,Zakila Ton Mashintron Town</a></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-heading">
+            <h2>QUICK LINKS</h2>
+            <div class="ul-links">
+                <ul class="li-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#"> F.A.Q</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#"> Services</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">FeedBacks</a></li>
+                    <li><a href="#"> Careers</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="third-heading">
+            <h2>Recent Posts</h2>
+            <div class="ul-links">
+                <div class="first-image">
+                    <img class="first-img" src="./cable.png" alt="#"/>
+                    <div class="first-text">
+                        <h4>9 June, 2022</h4>
+                        <a href="#">Can textiles lead during the pandemic? </a>
+                    </div>
+                </div>
+            </div>
+                <div class="first-image">
+                    <img class="first-img" src="./dty.png" alt="#"/>
+                    <div class="first-text">
+                        <h4>30 May, 2022</h4>
+                        <a href="#">The Story of a Silk Lends Cotton like....</a>
+                    </div>
+                </div>
+            <div class="view-more">
+                <a href="#">VIEW ALL RECENT POST + </a>
+            </div>
+        </div>
+    </div>
+    <div class="container-14">
+      <div class="social-media-icons">
+        <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+        <a href="https://x.com/" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+      </div>
+        <div class="sub-container-14">
+            <div class="copyright">
+                <p>Copyright © 2025&nbsp;<a id="fabiflex" href="./index.html">&nbsp;silkolite.com </a></p>
+            </div> 
+        </div>
+        <ul class="bottom-link">
+            <li><a href="#">Terms & Condition / </a></li>
+            <li><a href="#">Careers / </a></li>
+            <li><a href="#">Privacy Policy</a></li>
+        </ul>
+    </div>
+    <div class="whatsapp">
+        <a href="https://web.whatsapp.com/" class="fa fa-whatsapp"></a>
+        <a id="whatsapp-links" href="https://web.whatsapp.com/">How Can I Help You ?</a>
+    </div>
+  </body>
+  </html>

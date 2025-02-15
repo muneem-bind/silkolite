@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Akshar' rel='stylesheet'>
+    <link rel="stylesheet" href="./forgot.css">
+    <title>Silkolite</title>
+</head>
+<body>
+        <nav class="navbar">
+            <img class="logo" src="./logo.jpg"/>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <ul class="nav-links">
+                <li><a class="active" href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./product.html">Products</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li>
+                    <a href="./network.html">Network</a>
+                    <div class="dropdown-menu">
+                        <ul class="nav-links">
+                            <li><a href="./demesticmarket.html">Demestic Market</a></li>
+                            <li><a href="./globalmarket.html">Global Market</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="./contact.html">Contact Us</a></li>
+                <li>
+                    <a href="./dashboard.html">Account</a>
+                    <div class="dropdown-menu">
+                        <ul class="nav-links">
+                            <li><a href="./dashboard.html">Dashboard</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav-contact">
+                <div class="nav-num">
+                    <p>Call us Now|</p>
+                    <a id="num-mail" href="#">+18 - 2222 - 3555</a>
+                </div>
+                <div class="nav-mail">
+                    <p>Talk to us</p>
+                    <a id="num-mail" href="#">example@gmail.com</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="forgot-password">
+            <p>Enter your email to reset your password</p>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <button onclick="resetPassword()">Reset Password</button>
+            <p id="message"></p>
+        </div>
+    </div>
+    
+    <script>
+        function resetPassword() {
+            var email = document.getElementById("email").value;
+            if (email) {
+                document.getElementById("message").innerText = "Password reset link sent to " + email;
+                document.getElementById("message").style.color = "green";
+            } else {
+                document.getElementById("message").innerText = "Please enter a valid email.";
+                document.getElementById("message").style.color = "red";
+            }
+        }
+    </script>
+    <div class="footer">
+        <div class="social-media-icons">
+          <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+          <a href="https://x.com/" class="fa fa-twitter"></a>
+          <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+          <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+        </div>
+          <div class="sub-container-14">
+              <div class="copyright">
+                  <p>Copyright © 2025&nbsp;<a id="fabiflex" href="./index.html">&nbsp;silkolite.com </a></p>
+              </div> 
+          </div>
+          <ul class="bottom-link">
+              <li><a href="#">Terms & Condition / </a></li>
+              <li><a href="#">Careers / </a></li>
+              <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+</body>
+</html>
